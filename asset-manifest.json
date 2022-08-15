@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/reactrouter2/static/css/main.073c9b0a.css",
-    "main.js": "/reactrouter2/static/js/main.3eb4967d.js",
-    "static/js/787.14d66ee3.chunk.js": "/reactrouter2/static/js/787.14d66ee3.chunk.js",
-    "static/media/logo.svg": "/reactrouter2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/reactrouter2/static/css/main.87cbab95.css",
+    "main.js": "/reactrouter2/static/js/main.9b765e80.js",
     "index.html": "/reactrouter2/index.html",
-    "main.073c9b0a.css.map": "/reactrouter2/static/css/main.073c9b0a.css.map",
-    "main.3eb4967d.js.map": "/reactrouter2/static/js/main.3eb4967d.js.map",
-    "787.14d66ee3.chunk.js.map": "/reactrouter2/static/js/787.14d66ee3.chunk.js.map"
+    "main.87cbab95.css.map": "/reactrouter2/static/css/main.87cbab95.css.map",
+    "main.9b765e80.js.map": "/reactrouter2/static/js/main.9b765e80.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3eb4967d.js"
+    "static/css/main.87cbab95.css",
+    "static/js/main.9b765e80.js"
   ]
 }
