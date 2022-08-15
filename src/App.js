@@ -1,23 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import FAQ from './components/FAQ.js';
+import Tour from './components/Tour.js';
+import TourDetail from './components/TourDetail.js';
+import TourList from './components/TourList.js';
+import { Routes, Route, Link,Outlet } from "react-router-dom";
+function Home() {
+  return (
+    <>
+      <main>
+        <h2>首頁</h2>
+        <p>歡迎來到首頁</p>
+      </main>
+      
+    </>
+  );
+}
 
+
+
+function Layout() {
+  return (
+    <>
+      <div className="header">
+      表頭
+      <nav>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/faq'>faq</Link>
+        </li>
+        <li>
+          <Link to='/tour'>Tour</Link>
+        </li>
+      </nav>
+      </div>
+      <div className="content">
+        <Outlet />
+      </div>
+      <div className="footer">表尾</div>
+    </>
+  );
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/tour" element={<Tour />} >
+             <Route index element={<TourList />} />
+             <Route path=":Id" element={<TourDetail />} />
+            </Route>
+        </Route>
+      </Routes>
     </div>
   );
 }
